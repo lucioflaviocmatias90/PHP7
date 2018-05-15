@@ -1,0 +1,22 @@
+o arquivo "drivers-php7-sql-server.rar" são os drivers do PHP7 para o Microsoft SQL Server, onde
+será possível fazer conexão com o banco de dados utilizando a função "PDO" do PHP
+
+INSTALAÇÃO
+
+1 - extraia o arquivo "drivers-php7-sql-server.rar"
+2 - copie os 8 arquivos e cole dentro do diretório "C:/xampp/php/ext/"
+3 - vá na pasta "C:/xampp/php/" e procure o arquivo "php.ini"
+4 - edite o arquivo "php.ini", pressione CTRL+F (localizar) e digite "extension"
+5 - copie e cole as seguintes instruções
+
+extension=php_pdo_sqlsrv_71_nts_x64.dll
+extension=php_pdo_sqlsrv_71_nts_x86.dll
+extension=php_pdo_sqlsrv_71_ts_x64.dll
+extension=php_pdo_sqlsrv_71_ts_x86.dll
+extension=php_sqlsrv_71_nts_x64.dll
+extension=php_sqlsrv_71_nts_x86.dll
+extension=php_sqlsrv_71_ts_x64.dll
+extension=php_sqlsrv_71_ts_x86.dll
+
+6 - salve o arquivo e reinicie o Apache Server
+7 - Pronto! Já está configurado
