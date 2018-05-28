@@ -2,12 +2,14 @@
 
 require_once("config.php");
 
-// $sql = new Sql();
+/*
+$sql = new Sql();
 
-// $usuarios = $sql->select("SELECT * FROM tb_usuarios");
+$usuarios = $sql->select("SELECT * FROM tb_usuarios");
 
-// echo "<pre>" .json_encode($usuarios). "</pre>";
+echo "<pre>" .json_encode($usuarios). "</pre>";
 
+*/
 
 echo "Carrega apenas um usuário com o ID = 3<br>";
 
@@ -53,5 +55,51 @@ $usuario = new Usuario();
 $usuario->login("victor", "meutenis");
 
 echo $usuario;
+
+
+
+/*
+echo "<br><br><br><br>Inserindo um usuário usando login e a senha<br>";
+
+echo "=========================<br>";
+
+$aluno = new Usuario();
+
+$aluno->setDeslogin("aluno");
+$aluno->setDessenha("@lun0");
+$aluno->insert();
+
+echo $aluno;
+*/
+
+
+
+echo "<br><br><br><br>Atualizando o usuário do ID = 8<br>";
+
+echo "=========================<br>";
+
+$usuario = new Usuario();
+
+$usuario->loadById("8");
+
+$usuario->update("professor", "e234242ws");
+
+echo $usuario;
+
+
+
+
+echo "<br><br><br><br>Deletando o usuário do ID = 10<br>";
+
+echo "=========================<br>";
+
+$usuario = new Usuario();
+
+$usuario->loadById("10");
+
+$usuario->delete();
+
+echo $usuario;
+
 
 ?>
