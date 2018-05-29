@@ -1,0 +1,19 @@
+<?php
+
+$pessoas = array();
+
+array_push($pessoas, array(
+	'nome'=>'Joao',
+	'idade'=>'20')
+);
+
+array_push($pessoas, array(
+	'nome'=>'Glaucio',
+	'idade'=>'25')
+);
+
+echo json_encode($pessoas);
+
+/* json_encode irá imprimir os objetos do array "$pessoas"   */
+
+?>
