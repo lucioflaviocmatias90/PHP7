@@ -1,0 +1,9 @@
+{
+    "name": "lucio/composer",
+    "description": "Aula 18 - utilizando o Composer pela primeira vez",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+    	"monolog/monolog":"1.0.*"
+    }
+}
