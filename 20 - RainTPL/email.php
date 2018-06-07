@@ -71,18 +71,18 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "luciodeathmetal@gmail.com";
+$mail->Username = "example@gmail.com";
 
 //Password to use for SMTP authentication
-$mail->Password = "malware123";
+$mail->Password = "senha123";
 
 //Set who the message is to be sent from
-$mail->setFrom('luciodeathmetal@gmail.com', 'Lucio Flavio Gmail');
+$mail->setFrom('example@gmail.com', 'Fulano de Tal');
 
 //Set an alternative reply-to address
 // $mail->addReplyTo('replyto@example.com', 'First Last');
 //Set who the message is to be sent to
-$mail->addAddress('lucioflavio.cmatias90@hotmail.com', 'Lucio Flavio Hotmail');
+$mail->addAddress('example@hotmail.com', 'Ciclano de Tal');
 
 //Set the subject line
 $mail->Subject = 'Testando a Classe PHPMailer';
